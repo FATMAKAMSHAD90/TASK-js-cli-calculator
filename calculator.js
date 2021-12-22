@@ -6,8 +6,8 @@ const number1 = prompt("Type the first number: ");
 const number2 = prompt("Type the second number: ");
 const operation = prompt("Type the operation: ");
 let result;
-if (isNaN(number1)) {
-  console.log("invalid Please put numbers !") && isNaN(number2);
+if (isNaN(number1) || isNaN(number2)) {
+  console.log("invalid Please put numbers !");
 } else if (operation == "+") {
   result = +number1 + +number2;
   console.log(number1, "+", number2, "=", result);
